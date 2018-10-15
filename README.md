@@ -12,8 +12,10 @@ Features
 * Secure-only mode (only allow connections with 'dd'-secrets). See `allowed_protocols` option.
 * Multiple ports with unique secret and promo tag for each port
 * Automatic configuration reload (no need for restarts once per day)
-* Most of the configuration options might be updated without service restart
+* Most of the configuration options can be updated without service restart
 * Very high performance - can handle tens of thousands connections! Scales to all CPU cores.
+* Supports multiplexing (Many connections Client -> Proxy are wrapped to small amount of
+  connections Proxy -> Telegram Server)
 * Small codebase compared to oficial one
 * A lots of metrics could be exported (optional)
 
